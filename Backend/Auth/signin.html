@@ -1,0 +1,3 @@
+<form action="{% url 'Auth:signin' %}?next={{ request.GET.next }}" method="POST">
+    {% csrf_token %}
+</form>
